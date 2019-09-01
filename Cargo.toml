@@ -12,3 +12,5 @@ license = "MIT"
 
 [dependencies]
 nature_common = {path = "../Nature-Common", version="0.0.2"}
+serde = "1.0"
+serde_derive = "1.0"
