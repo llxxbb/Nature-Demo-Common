@@ -13,10 +13,9 @@ pub struct OrderAccount {
     /// design in this way can hold each over pay
     pub total_paid: u32,
     pub last_paid: u32,
-    pub will_refund: u32,
     // record the reason for account change
     pub reason: OrderAccountReason,
-    // maybe negative for over paid
+    /// positive: over paid, negative : debt
     pub diff: i32,
 }
 
