@@ -9,11 +9,11 @@ pub struct Payment {
 #[derive(Serialize, Deserialize, Debug, Default, Clone, PartialEq, Eq)]
 pub struct OrderAccount {
     pub receivable: u32,
-    /// can not over the receivable, the over record to the field "will_refund"
-    /// design in this way can hold each over pay
+    /// can not be over the receivable, the extra money would be record to the field `diff`
+    /// design in this way can hold each pay which is over
     pub total_paid: u32,
     pub last_paid: u32,
-    // record the reason for account change
+    /// record the reason for account change
     pub reason: OrderAccountReason,
     /// positive: over paid, negative : debt
     pub diff: i32,
