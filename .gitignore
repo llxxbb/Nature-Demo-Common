@@ -2,3 +2,5 @@
 **/*.rs.bk
 *.iml
 *.lock
+/debug/.cargo-lock
+/debug/
