@@ -4,3 +4,4 @@
 *.lock
 /debug/.cargo-lock
 /debug/
+/.idea
