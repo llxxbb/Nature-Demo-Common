@@ -2,6 +2,7 @@
 pub struct Commodity {
     pub id: u32,
     pub name: String,
+    pub price: u64,
 }
 
 #[derive(Serialize, Deserialize, Debug, Default, Clone, PartialEq, Eq)]
