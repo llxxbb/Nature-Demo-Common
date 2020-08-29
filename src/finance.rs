@@ -1,6 +1,8 @@
+use nature_common::ID;
+
 #[derive(Serialize, Deserialize, Debug, Default, Clone, PartialEq, Eq)]
 pub struct Payment {
-    pub order: u128,
+    pub order: ID,
     pub from_account: String,
     pub paid: u32,
     pub pay_time: i64,
